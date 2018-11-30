@@ -5,31 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Trónok harca</title>
+  <title>Királyvár - Kezdőlap</title>
   <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <link href="./fonts/thryn.ttf" rel="stylesheet">
+
 </head>
 
 <body>
     <header class="container">
         <nav class="topnav">
-            <a class="active" href="#home">Kezdőlap</a>
-            <a class="characters" href="#characters">Szereplők</a>
-            <div class="dropdown">
-                <button class="statistics">Statisztika</button>
-                <div class="dropdown-content">
-                    <a href="#liveordead">Élők és halottak</a>
-                    <a href="#houses">Házak</a>
-                    <a href="#organisations">Szervezetek</a>
+            <a class="nav__home" href="index.html">Kezdőlap</a>
+            <a class="nav__characters" href="#characters">Szereplők</a>
+            <div class="nav__dropdown">
+                <button class="nav__button">Statisztika</button>
+                <div class="nav__dropdown-content">
+                    <a href="statsAliveDead.html">Élők és halottak</a>
+                    <a href="statsHouses.html">Házak</a>
+                    <a href="statsOrganizations.html">Szervezetek</a>
                 </div>
             </div>
-            <a class="portrais" href="#portrais">Portrék</a>
-            <a class="galery" href="galery">Galéria</a>
+            <a class="nav__portrais" href="#portrais">Portrék</a>
+            <a class="nav__portrais" href="#galery">Galéria</a>
         </nav>
     </header>
-    <main class="container">
+    <main class="container" id="main-index">
         <div class="main">
             <img class="main__img" src="./img-own/gameofthrones_htmlimage.jpg" alt="Kings Landing">
-            <h1 class="main__h1">Köszöntünk Királyvárban!</h1>
         </div>   
     </main>
     <footer class="container">

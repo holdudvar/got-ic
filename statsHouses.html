@@ -7,22 +7,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Házak</title>
     <link rel="stylesheet" href="./css/statsHouses.css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./fonts/thryn.ttf" rel="stylesheet">
 </head>
 
 <body>
+    <header class="container">
+        <nav class="topnav">
+            <a class="nav__home" href="index.html">Kezdőlap</a>
+            <a class="nav__characters" href="#characters">Szereplők</a>
+            <div class="nav__dropdown">
+                <button class="nav__button">Statisztika</button>
+                <div class="nav__dropdown-content">
+                    <a href="statsAliveDead.html">Élők és halottak</a>
+                    <a href="statsHouses.html">Házak</a>
+                    <a href="statsOrganizations.html">Szervezetek</a>
+                </div>
+            </div>
+            <a class="nav__portrais" href="#portrais">Portrék</a>
+            <a class="nav__portrais" href="#galery">Galéria</a>
+        </nav>
+    </header>
+    <main class="container" id="main-statsHouses">
+        <div>
+            <div class="housesTable">
+                <h2>Házak</h2>
+                <table id="housesTable">
 
-<div>
-<div class="housesTable">
-  <h2>Házak</h2>
-  <table id="housesTable">
-    
-  </table>
-</div>
-</div>
+                </table>
+            </div>
+        </div>
 
-  <script src="./js/characters.js"></script>
-  <script src="./js/statsHouses.js"></script>
-
+        <script src="./js/characters.js"></script>
+        <script src="./js/statsHouses.js"></script>
+    </main>
+    <footer class="container">
+        <p>Copyright 2018 Training360 - Mások</p>
+    </footer>
 </body>
 
 </html>

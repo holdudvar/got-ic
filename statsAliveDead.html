@@ -7,24 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Élők és holtak</title>
     <link rel="stylesheet" href="./css/statsAliveDead.css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./fonts/thryn.ttf" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./fonts/thryn.ttf" rel="stylesheet">
 </head>
 
 <body>
-
-<div>
-<div class="aliveDeadList">
-  <h2>Élők</h2>
-  <p id="alive"></p>
-</div>
-<div class="aliveDeadList">
-  <h2>Holtak</h2>
-  <p id="dead"></p>
-</div>
-</div>
-
-  <script src="./js/characters.js"></script>
-  <script src="./js/statsAliveDead.js"></script>
-
+    <header class="container">
+        <nav class="topnav">
+            <a class="nav__home" href="index.html">Kezdőlap</a>
+            <a class="nav__characters" href="#characters">Szereplők</a>
+            <div class="nav__dropdown">
+                <button class="nav__button">Statisztika</button>
+                <div class="nav__dropdown-content">
+                    <a href="statsAliveDead.html">Élők és halottak</a>
+                    <a href="statsHouses.html">Házak</a>
+                    <a href="statsOrganizations.html">Szervezetek</a>
+                </div>
+            </div>
+            <a class="nav__portrais" href="#portrais">Portrék</a>
+            <a class="nav__portrais" href="#galery">Galéria</a>
+        </nav>
+    </header>
+    <main class="container" id="main-statsAliveDead">
+        <div>
+            <div class="aliveDeadList">
+                <h2>Élők</h2>
+                <p id="alive"></p>
+            </div>
+            <div class="aliveDeadList">
+                <h2>Holtak</h2>
+                <p id="dead"></p>
+            </div>
+        </div>
+        <script src="./js/characters.js"></script>
+        <script src="./js/statsAliveDead.js"></script>
+    </main>
+    <footer class="container">
+        <p>Copyright 2018 Training360 - Mások</p>
+    </footer>
 </body>
 
 </html>

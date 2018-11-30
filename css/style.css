@@ -8,31 +8,51 @@
 body {
     background-color: rgb(236, 227, 221);
     margin:0;
+    min-height: 100%;
+    position: relative
 }
+#main-index {
+    min-height: 80vh;
+}
+
+#main-statsAliveDead {
+    min-height: 115vh;
+}
+
+#main-statsHouses {
+    min-height: 80vh;
+}
+
+#main-statsOrganizations {
+    min-height: 80vh;
+}
+
 footer {
-    background-color: #333;
+    background-color: rgb(236, 227, 221);
     bottom: 0;
-    color: white;
-    height: 6%;
-    position: fixed;
+    color: #333;
+    height: 30px;
+    position: absolute;
     text-align: center;
 }
 .topnav {
     background-color: #333;
+    font-family: Thyromanes serif;
     overflow: hidden;
 }
-.topnav > a, .statistics {
+.topnav > a, .nav__button {
     background-color: #333;
-    border: none;
     color: #f2f2f2;
-    font-size: 17px;    
+    font-family: Thyromanes serif;
+    font-size: 23px;    
     float: left;
     text-align: center;
     text-decoration: none;
     padding: 14px 16px;
-    width: 19%;
+    width: 202px;
+
 }
-.topnav > a:hover, .statistics:hover, .dropdown-content a:hover {
+.topnav > a:hover, .nav__button:hover, .nav__dropdown-content a:hover {
     background-color: rgb(189, 174, 166);
     color: black;
 }
@@ -40,15 +60,17 @@ footer {
     background-color: rgb(94, 78, 69);
     color: white;
 }
-.dropdown {
+.nav__dropdown {
     float: left;
     overflow: hidden;
 }
-.statistics {
+.nav__button {
+    width: 204px;
     position: relative;
     display: inline-block;
+    border: none;
 }
-.dropdown-content {
+.nav__dropdown-content {
     background-color: rgb(94, 78, 69);
     border: none;
     display: none;
@@ -60,17 +82,21 @@ footer {
     text-align: center;
     text-decoration: none;
     z-index: 1;
-    width: 10%;
+    width: 15%;
+    top: 52px;
 }
-.dropdown-content a {
+.nav__dropdown-content a {
     float: none;
+    font-family: Thyromanes serif;
+    font-size: 20px;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+
 }
-.dropdown:hover .dropdown-content{
+.nav__dropdown:hover .nav__dropdown-content {
     display: block;
 }
 
@@ -82,10 +108,4 @@ footer {
 .main__img {
     width: 100%;
     height: center;
-}
-
-.main__h1 {
-    position: absolute;
-    left: calc(50% - 185px);
-    top: 30%;
 }
