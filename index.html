@@ -10,20 +10,29 @@
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <nav class="topnav">
             <a class="active" href="#home">Kezdőlap</a>
             <a class="characters" href="#characters">Szereplők</a>
-            <a class="statistics" href="#statistics">Statisztika</a>
+            <div class="dropdown">
+                <button class="statistics">Statisztika</button>
+                <div class="dropdown-content">
+                    <a href="#liveordead">Élők és halottak</a>
+                    <a href="#houses">Házak</a>
+                    <a href="#organisations">Szervezetek</a>
+                </div>
+            </div>
             <a class="portrais" href="#portrais">Portrék</a>
             <a class="galery" href="galery">Galéria</a>
         </nav>
     </header>
-    <main>
-      <img href="./img/gameofthrones.jpg" alt="Kings Landing">
-      <h1>Köszöntünk Királyvárban!</h1>
+    <main class="container">
+        <div class="main">
+            <img class="main__img" src="./img-own/gameofthrones_htmlimage.jpg" alt="Kings Landing">
+            <h1 class="main__h1">Köszöntünk Királyvárban!</h1>
+        </div>   
     </main>
-    <footer>
+    <footer class="container">
         <p>Copyright 2018 Training360 - Mások</p>
      </footer>
 </body>
