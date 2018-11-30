@@ -10,6 +10,8 @@ for (var k in gameOfThronesCharacters) {
   }
 }
 
+selectedHouses.sort();
+
 for (var i = 0; i < selectedHouses.length; i += 1) {
   countedHouses[i] = [];
   countedHouses[i][2] = 0;
