@@ -1,16 +1,20 @@
 /* globals gameOfThronesCharacters */
 
-
 var characterTable = document.getElementById('characters');
-var tableRow = '';
-
+var tableRow = `<tr>
+<th>Név</th>
+<th>Portré</th>
+<th>Ház</th>
+<th>Bio</th>
+</tr>`;
 
 for (var i = 0; i < gameOfThronesCharacters.length; i++) {
-  tableRow +=
-    `
+  tableRow += `
     <tr class='gotCharactersTable'>
         <td class="name">${gameOfThronesCharacters[i].name}</td>    
-        <td class="image"><image src="./${gameOfThronesCharacters[i].portrait}" alt="${gameOfThronesCharacters[i].name}"</td>
+        <td class="image"><image src="./${
+  gameOfThronesCharacters[i].portrait
+}" alt="${gameOfThronesCharacters[i].name}"</td>
         <td class="house"><img src="./img/houses/${ifExist()}.png" alt="${ifExist()}">${ifExist()}</td>
         <td class="bio" id="bio_cell${i}">${gameOfThronesCharacters[i].bio}</td>
         <td class="edit-button"><button id="editButton${i}" onclick="editDiv('${i}')">Edit</button><button id="saveButton${i}" onclick="saveDiv(${i})">Save</button></td>
@@ -23,7 +27,6 @@ for (var k = 0; k < gameOfThronesCharacters.length; k++) {
   var saveID = 'saveButton' + k;
   document.getElementById(`${saveID}`).style.display = 'none';
 }
-
 
 function ifExist() {
   if (gameOfThronesCharacters[i].house !== undefined) {
@@ -42,12 +45,10 @@ function editDiv(no) {
   document.getElementById('saveButton' + no).style.display = 'inline';
 }
 
-
 function deleteRow(no) {
   var j = no.parentNode.parentNode.rowIndex;
   document.getElementById('characters').deleteRow(j);
 }
-
 
 function saveDiv(no) {
   document.getElementById('bio_text' + no).contentEditable = false;

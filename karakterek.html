@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html lang="hu">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Characters</title>
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
 
     <style>
-        .name {
-            width: 12%;
-        }
+      .name {
+        width: 12%;
+      }
 
-        .house {
-            text-transform: capitalize;
-            width: 10%;
-        }
+      .house {
+        text-transform: capitalize;
+        width: 10%;
+      }
 
-        .bio {
-            width: 70%;
-            height: auto;
-        }
+      .bio {
+        width: 70%;
+        height: auto;
+      }
 
-        .bioInput {
-            width: 70%;
-            height: 50%;
-        }
+      .bioInput {
+        width: 70%;
+        height: 50%;
+      }
 
-        .textArea {
-            width: 98%;
-        }
+      .textArea {
+        width: 98%;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="container">
-        <nav class="topnav">
-            <a class="active" href="#home">Kezdőlap</a>
-            <a class="characters" href="#characters">Szereplők</a>
-            <div class="dropdown">
-                <button class="statistics">Statisztika</button>
-                <div class="dropdown-content">
-                    <a href="#liveordead">Élők és halottak</a>
-                    <a href="#houses">Házak</a>
-                    <a href="#organisations">Szervezetek</a>
-                </div>
-            </div>
-            <a class="portrais" href="#portrais">Portrék</a>
-            <a class="galery" href="galery">Galéria</a>
-        </nav>
+      <nav class="topnav">
+        <a class="active" href="#home">Kezdőlap</a>
+        <a class="characters" href="#characters">Szereplők</a>
+        <div class="dropdown">
+          <button class="statistics">Statisztika</button>
+          <div class="dropdown-content">
+            <a href="#liveordead">Élők és halottak</a>
+            <a href="#houses">Házak</a> <a href="#organisations">Szervezetek</a>
+          </div>
+        </div>
+        <a class="portrais" href="#portrais">Portrék</a>
+        <a class="galery" href="galery">Galéria</a>
+      </nav>
     </header>
-    <main>
-        <table id="characters"></table>
-    </main>
+    <main><table id="characters"></table></main>
 
-    <footer class="container">
-        <p>Copyright 2018 Training360 - Mások</p>
-    </footer>
+    <footer class="container"><p>Copyright 2018 Training360 - Mások</p></footer>
 
     <script src="./js/characters.js"></script>
     <script src="./js/karakterek.js"></script>
-</body>
-
+  </body>
 </html>
