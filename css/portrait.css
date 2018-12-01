@@ -1,0 +1,11 @@
+.img {
+    margin: auto;
+    max-width: 1140px;
+    width: 16%;
+    position: relative;
+};
+td, th {
+    text-align:center;
+    width:190px;
+    position:relative;
+}
