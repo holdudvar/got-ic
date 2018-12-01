@@ -17,6 +17,7 @@ footer {
 td,
 th {
     background-color: rgb(112, 107, 104);
+    border-radius: 3px;
     color: white;
     text-align: center;
     width: 200px;
@@ -29,6 +30,11 @@ h2 {
 }
 
 td:hover {
+    background-color: rgb(212, 204, 199);
+    color: rgb(77, 73, 71);
+}
+
+#alive {
     background-color: rgb(212, 204, 199);
     color: rgb(77, 73, 71);
 }
@@ -56,7 +62,7 @@ td:hover {
 }
 
 #main-statsAliveDead {
-    min-height: 115vh;
+    min-height: 125vh;
 }
 
 #main-statsHouses {
@@ -136,4 +142,9 @@ td:hover {
 .nav__dropdown-content a:hover {
     background-color: rgb(189, 174, 166);
     color: black;
+}
+
+#dead {
+    background-color: rgb(112, 107, 104);
+    color: white;
 }
