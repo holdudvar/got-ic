@@ -14,6 +14,19 @@ footer {
     text-align: center;
 }
 
+td,
+th {
+    background-color: rgb(112, 107, 104);
+    color: white;
+    text-align: center;
+    width: 200px;
+}
+
+td:hover {
+    background-color: rgb(212, 204, 199);
+    color: rgb(77, 73, 71);
+}
+
 .container {
     padding: 0 15px;
     position: relative;
