@@ -1,8 +1,8 @@
 /* globals gameOfThronesCharacters */
 
+
 var characterTable = document.getElementById('characters');
 var tableRow = '';
-var element = document.getElementById('remove-button');
 
 
 for (var i = 0; i < gameOfThronesCharacters.length; i++) {
@@ -11,7 +11,7 @@ for (var i = 0; i < gameOfThronesCharacters.length; i++) {
     <tr class='gotCharactersTable'>
         <td class="name">${gameOfThronesCharacters[i].name}</td>    
         <td class="image"><image src="./${gameOfThronesCharacters[i].portrait}" alt="${gameOfThronesCharacters[i].name}"</td>
-        <td class="house">${ifExist()}</td>
+        <td class="house"><img src="./img/houses/${ifExist()}.png" alt="${ifExist()}">${ifExist()}</td>
         <td class="bio" id="bio_cell${i}">${gameOfThronesCharacters[i].bio}</td>
         <td class="edit-button"><button id="editButton${i}" onclick="editDiv('${i}')">Edit</button><button id="saveButton${i}" onclick="saveDiv(${i})">Save</button></td>
         <td class="remove-button"><button onclick="deleteRow(this)">Delete</button></td>   
@@ -58,7 +58,3 @@ function saveDiv(no) {
   document.getElementById('saveButton' + no).style.display = 'none';
   document.getElementById('editButton' + no).style.display = 'inline';
 }
-
-element.addEventListener('click', deleteRow);
-element.addEventListener('click', editDiv);
-element.addEventListener('click', saveDiv);
