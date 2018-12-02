@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(236, 227, 221);
+    margin: 0;
+    min-height: 100%;
+    position: relative;
+}
+
+footer {
+    background-color: rgb(236, 227, 221);
+    bottom: 0;
+    color: #333;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+}
+
+td,
+th {
+    background-color: rgb(112, 107, 104);
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    width: 200px;
+}
+
+h2 {
+    font-family: "Cormorant", serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#alive {
+    background-color: rgb(212, 204, 199);
+    color: rgb(77, 73, 71);
+}
+
+.container {
+    padding: 0 15px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.main__div {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main__img {
+    height: center;
+    width: 100%;
+}
+
+#main-index {
+    min-height: 80vh;
+}
+
+#main-statsAliveDead {
+    min-height: 125vh;
+}
+
+#main-statsHouses {
+    min-height: 80vh;
+}
+
+#main-statsOrganizations {
+    min-height: 80vh;
+}
+
+.nav__button {
+    width: 210px;
+    position: relative;
+    display: inline-block;
+    border: none;
+}
+
+.nav__dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.nav__dropdown-content {
+    background-color: rgb(94, 78, 69);
+    border: none;
+    color: #f2f2f2;
+    display: none;
+    overflow: auto;
+    padding: 14px 16px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 48px;
+    width: 14.8%;
+    z-index: 1;
+}
+
+.nav__dropdown-content a {
+    color: black;
+    display: block;
+    float: none;
+    font-family: "Cormorant", serif;
+    font-size: 16px;
+    padding: 12px 16px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__dropdown:hover .nav__dropdown-content {
+    display: block;
+}
+
+.topnav {
+    background-color: #333;
+    font-family: "Cormorant", serif;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.topnav>a,
+.nav__button {
+    background-color: #333;
+    color: #f2f2f2;
+    float: left;
+    font-family: "Cormorant", serif;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 202px;
+}
+
+.topnav>a:hover,
+.nav__button:hover,
+.nav__dropdown-content a:hover {
+    background-color: rgb(189, 174, 166);
+    color: black;
+}
+
+#dead {
+    background-color: rgb(112, 107, 104);
+    color: white;
+}

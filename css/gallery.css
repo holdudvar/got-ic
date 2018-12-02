@@ -1,0 +1,13 @@
+.div {
+    margin:auto;
+    max-width:1140px;
+    width:50%;
+    position:relative;
+
+}
+.img {
+    margin:auto;
+    max-width:1140px;
+    width:22%;
+    position:relative;
+}
