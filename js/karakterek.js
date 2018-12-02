@@ -18,8 +18,8 @@ for (var i = 0; i < gameOfThronesCharacters.length; i++) {
 }" alt="${gameOfThronesCharacters[i].name}"</td>
         <td class="house"><img src="./img/houses/${ifExist()}.png" alt="${ifExist()}">${ifExist()}</td>
         <td class="bio" id="bio_cell${i}">${gameOfThronesCharacters[i].bio}</td>
-        <td class="edit-button"><button id="editButton${i}" onclick="editDiv('${i}')">Edit</button><button id="saveButton${i}" onclick="saveDiv(${i})">Save</button></td>
-        <td class="remove-button"><button onclick="deleteRow(this)">Delete</button></td>   
+        <td class="edit-button"><button class="button edit" id="editButton${i}" onclick="editDiv('${i}')">Edit</button><button class="button save" id="saveButton${i}" onclick="saveDiv(${i})">Save</button></td>
+        <td class="remove-button"><button class="button delete" onclick="deleteRow(this)">Delete</button></td>    
     </tr>
 `;
 }
@@ -53,9 +53,6 @@ function deleteRow(no) {
 
 function saveDiv(no) {
   document.getElementById('bio_text' + no).contentEditable = false;
-  // var bioVal = document.getElementById('bio_text' + no).value;
-
-  // document.getElementById('bio_cell' + no).innerHTML = bioVal;
 
   document.getElementById('saveButton' + no).style.display = 'none';
   document.getElementById('editButton' + no).style.display = 'inline';
